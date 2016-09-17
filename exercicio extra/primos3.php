@@ -1,0 +1,1 @@
+//TODO optimizar o tempo de processamento da classe primo3.php
