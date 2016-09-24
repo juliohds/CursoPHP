@@ -38,7 +38,7 @@ function primos($ultimo_valor){
 	}
 }
 
-primos(100000);  // time php primos.php
+primos(100);  // time php primos.php
 
 
 
