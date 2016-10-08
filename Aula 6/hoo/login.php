@@ -27,7 +27,7 @@
             <?php endif ?>
 
 
-            <form class="form-signin" action="<?= $URL_PATH ?>core/login.php" method="POST">
+            <form class="form-signin" action="<?= $URL_PATH ?>core/login_db.php" method="POST">
                 <span id="reauth-email" class="reauth-email"></span>
                 <input type="email" name="email" id="inputEmail" class="form-control" placeholder="Email address"  autofocus>
                 <input type="password" name="senha" id="inputPassword" class="form-control" placeholder="Password" >

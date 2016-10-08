@@ -2,6 +2,7 @@
 	require_once "core/settings.php";
 	require_once "core/db_mysql.php";
 	
+	//valida a pagina se veio via POST e nao via GET
 	if (! isset($_SESSION)) session_start(); 
 
 	if(! isset($_SESSION['email'])){
@@ -27,7 +28,7 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="#"><b>SISTEMA HOO</b></a>
+      <a class="navbar-brand" href="#"><b><SPAN></SPAN>eja bem vindo ao Sistema HOO</b></a>
     </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->
@@ -70,7 +71,7 @@
 					<td><?= $row['email'] ?></td>
 					<td>
 						<!-- /4500-PHP/hoo/core/editar.php?id=4-->
-						<a href="<? $URL_PATH ?>core/editar.php?id=<?= $row['id'] ?>" class="btn btn-primary btn-sm">Editar</a>
+						<a href="<? $URL_PATH ?>editar.php?id=<?= $row['id'] ?>" class="btn btn-primary btn-sm">Editar</a>
 						<a href="<? $URL_PATH ?>core/delete.php?id=<?= $row['id'] ?>" class="btn btn-danger btn-sm">Excluir</a>
 					</td>
 				</tr>
